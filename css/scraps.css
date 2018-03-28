@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.content_tree .ct_sub1 {
+	background: -moz-linear-gradient(top, rgba(2,160,225,0.15) 0%, rgba(2,160,225,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,160,225,0.15)), color-stop(100%,rgba(2,160,225,0)));
+	background: -webkit-linear-gradient(top, rgba(2,160,225,0.15) 0%,rgba(2,160,225,0) 100%);
+	background: -o-linear-gradient(top, rgba(2,160,225,0.15) 0%,rgba(2,160,225,0) 100%);
+	background: -ms-linear-gradient(top, rgba(2,160,225,0.15) 0%,rgba(2,160,225,0) 100%);
+	background: linear-gradient(top, rgba(2,160,225,0.15) 0%,rgba(2,160,225,0) 100%);
+}
+
+/*Style for open element 'FILE 5'*/
+.content_tree ul.cont_man li.open_ct_sub{
+	background: rgba(2,160,225,0.15) url(../img/framework_grid_actSelectDescendants.gif) no-repeat scroll 25px 0px; 
+}
+
+.content_tree li.open_ct_sub{
+	border-bottom:none;
+	color:#02a0e1;
+	position:relative;
+	}
+

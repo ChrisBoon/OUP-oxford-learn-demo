@@ -1,0 +1,18 @@
+#main { 
+	padding-left:0;
+	background:none;
+	border-left:1px solid #bebebe;
+	margin-left:253px;
+}
+#activity { 
+	padding-left:0;
+	background:none;
+}
+#sidebar { 
+	/* stick bg image of menu in here */
+	background:url('../img/toc_menu_t.png') no-repeat #fafafa; 
+	height:592px;
+	width:255px;
+	float:left;
+	position:relative;
+}

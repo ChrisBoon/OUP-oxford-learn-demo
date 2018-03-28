@@ -1,0 +1,36 @@
+
+.with_media_right #content, .with_facs #content{
+	float: left;
+	max-width: 370px;
+}
+
+.media_right{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.with_media_right #activity_controls, .with_facs #activity_controls{
+	clear: both;
+	}
+	
+.with_media_right .enumbed, .with_facs .enumbed{
+	max-width: 310px;
+}
+
+.media_top .largevideo{
+	margin: 20px auto 10px auto;
+	width: 640px;
+}
+
+.with_media_top .audio_media{
+	margin: 20px auto 10px 20px;
+	width: 270px;
+}
+.with_media_top .audio_media2{
+	margin: 20px auto 10px 20px;
+	width: 450px;
+}
+/* home link in menu bar */
+.homelink a { display:block; width: 260px; height:60px; float:left; }
+

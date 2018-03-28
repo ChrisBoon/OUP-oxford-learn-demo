@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>	
+<meta charset="utf-8" />	
+    <title>English File | Elementary Online Workbook | powered by OxfordLearn.com | An Oxford University Press product</title>	
+<!--<link rel="stylesheet" type="text/css" href="css/reset.css" /> CSS reset -->    
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/catdefault.css" /><!-- CSS that would apply to any course -->
+    
+    <link rel="stylesheet" type="text/css" href="css/englishfile.css" /><!-- CSS specific to this course -->
+	<link rel="stylesheet" type="text/css" href="css/temp.css" /><!-- CSS to put in a fake frame -->
+	<!--[if IE]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--><script src="js/jquery-1.7.1.js"></script>
+    <script type='text/javascript' src="js/jquery.cookie.js"></script>
+	<script type='text/javascript' src="js/jquery.collapsible.js"></script><script src="js/facs-hilite.js"></script>
+	<script>		$(document).ready(function() {
+			//Check whether hints are on or off
+			var czempty = localStorage.getItem('tggldHints');
+			if (czempty==null) {
+				localStorage.setItem('tggldHints', "hintsOn");
+			}else{
+				if(czempty == "hintsOn"){
+					$('.tgglHints').removeClass("hintsOff");
+					$('.tgglHints').addClass("hintsOn");
+					$('.tgglHinted').removeClass("hintsOff");
+					$('.tgglHinted').addClass("hintsOn");
+					$('#tgglHints').removeClass("hintsLnkOn");
+					$('#tgglHints').addClass("hintsLnkOff");
+					
+				}
+			}
+		  
+			//'onmouse' function to toggle hints on and off and link text between "On" and "Off"
+			  $('#tgglHints').click(function(){
+				if($('#tgglHints').hasClass("hintsLnkOn")) {
+					$('.tgglHints').removeClass("hintsOff");
+					$('.tgglHints').addClass("hintsOn");
+					$('.tgglHinted').removeClass("hintsOff");
+					$('.tgglHinted').addClass("hintsOn");
+					$('#tgglHints').removeClass("hintsLnkOn");
+					$('#tgglHints').addClass("hintsLnkOff");
+					
+					localStorage.setItem('tggldHints', "hintsOn");
+		
+				} else {
+					$('.tgglHints').removeClass("hintsOn");
+					$('.tgglHints').addClass("hintsOff");
+					$('.tgglHinted').removeClass("hintsOn");
+					$('.tgglHinted').addClass("hintsOff");
+					$('#tgglHints').removeClass("hintsLnkOff");
+					$('#tgglHints').addClass("hintsLnkOn");
+		
+					localStorage.setItem('tggldHints', "hintsOff");
+				}
+		   });
+					
+
+			$(".collapsibleContainer").collapsiblePanel();
+// Toggle the dropdown menu's
+			$(".dropdown .act_head_button, .dropdown button").click(function () {
+				$(this).parent().find('.dropdown-slider').slideToggle('fast');
+				$(this).find('span.toggle').toggleClass('active');
+				return false;
+			});
+		}); // END document.ready
+		
+		// Close open dropdown slider/s by clicking elsewhwere on page
+		$(document).bind('click', function (e) {
+			if (e.target.id != $('.dropdown').attr('class')) {
+				$('.dropdown-slider').slideUp();
+				$('span.toggle').removeClass('active');
+			}
+		}); // END document.bind
+	</script>
+</head>
+
+<body>	<div id="container">    	
+    	<div class="tgglHints homeLogoLnk hintsOff"></div>
+    	<div class="tgglHints contentLnk hintsOff"></div>
+    	<div class="tgglHints gradesLnk hintsOff"></div>
+    	<div class="tgglHints crseTlsLnk hintsOff"></div>
+        <div class="tgglHints tocLnk hintsOff"></div>
+    
+<header id="teacher_header" class="clearfix">
+			<a href="#"><div id="ol_logo">
+			</div></a>
+			<nav id="breadcrumb">
+				<ul>
+					<li>Home</li>
+					<li><a>English File | Elementary Online Workbook</a></li>
+				</ul>
+			</nav>
+			<nav id="minibar" class="clearfix">
+				<ul id="notification_bar">
+					<li>0</li>
+					<li class="alerts">9</li>
+					<li class="messages">42</li>
+				</ul>
+				<ul id="user_settings">
+					<li class="username"><a href="#">Mr Williamson</a>
+					<ul>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Notifications</a></li>
+						<li class="signout_li"><a href="#">Log out</a></li>
+					</ul></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="course">
+			<div class="homelink"><a class="c_p" href="ef_el_t_home.html"></a></div>
+            <header id="course_header" class="cleafix">
+				<nav class="cleafix">
+					<ul id="coursebar" class="cleafix"><!-- Secondary Teacher content -->
+						<li><a class="c_p" href="content_manage_t.html">Content</a></li>
+						<li><a class="c_p" href="grades_t.html">Grades</a></li>
+						<li><a href="#" class="trigger">Class Tools</a>
+							<ul>
+								<li><a href="#">Classlist</a></li>
+								<li><a class="tgglHinted hintsOff c_p" href="groups_t.html">Groups</a></li>
+								<li><a href="#">Calendar</a></li>
+                                <li><a href="#">Checklist</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Progress Check</a>
+							<ul>
+								<li><a href="#">User Progress</a></li>
+								<li><a href="#">Competencies</a></li>
+								<li><a href="#">Self-Assessment</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Resources</a>
+							<ul>
+								<li><a href="#">Locker</a></li>
+								<li><a href="#">Dictionary</a></li>
+								<li class="wideboy"><a href="#">Grammar Bank</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Communicate</a>
+							<ul>
+								<li><a href="#">Messages</a></li>
+								<li><a href="#">Discussions</a></li>
+								<li><a href="#">Surveys</a></li>
+								<li><a href="#">Chat</a></li>
+							</ul>
+						</li>
+					</ul><!-- END Secondary Teacher content -->		
+				</nav>				
+			</header>
+
+        <div id="activity" class="multiplechoice multiplechoice_alt with_facs">		    
+        <div id="act_cont_menu" class="content_tree ct_activity">
+            	<h1>Content Map</h1>
+<ul>
+                    <li>File 1</li>
+                    <li>File 2</li>
+                    <li>File 3</li>
+                    <li>File 4</li>
+                    <li class="open_ct_sub">File 5</li>
+                    <ul class="ct_sub1">
+                        <li>5A Do you have the X factor?</li>
+                        <li>5B Love your neighbours</li>
+                        <li class="open_ct_sub">5C Sun and the City</li>
+                        <ul class="ct_sub2">
+                            <li>Grammar</li>
+                            <li>Vocabulary</li>
+                            <li>Pronunciation</li>
+                            <li class="open_ct_sub">Reading</li>
+                            <ul class="ct_sub3">
+                                <a href="activity1_s.html"><li class="c_p">Exercise 4a</li></a>
+                            </ul> <!-- end .ct_sub3 -->
+                            <li>Listening</li>
+                            <li>Useful words and phrases</li>
+                        </ul> <!-- end .ct_sub2 -->
+                    </ul> <!-- end .ct_sub1 -->
+                    <li>File 6</li>
+                    <li>File 7</li>
+                    <li>File 8</li>
+                    <li>File 9</li>
+                    <li>File 10</li>
+                    <li>File 11</li>
+                    <li>File 12</li>
+                </ul> <!-- end .content_tree -->
+            </div> <!-- end .ct_activity -->
+			<div id="another_pointless_wrapper">
+				<div id="toppanel">
+					<a class="b2toc" href="content_t.html">Exit</a>
+	            </div>
+ 			<div id="rubric">
+				<p>Read the guidebook extract about things to do in Edinburgh. Now look at the sentences. Are they <em>true</em> or <em>false</em>?</p>
+            </div><!--END #rubric-->
+			<div id="content">
+				<div class="content_sub">
+					<p><span class="enum">1</span><span class="enumbed">Edinburgh Castle is outside the city.<a class="hint hint1">hint</a></span></p>
+					<form class="singleanswer">
+						<label class="c_p" for="1true"><input type="radio" name="q1" value="true" id="1true"/>True</label>
+						<label class="c_p" for="1false"><input type="radio" name="q1" value="false" id="1false"/>False</label>
+					</form>
+				</div>
+				<div class="content_sub">
+					<p><span class="enum">2</span><span class="enumbed">You can see some important things from Scotland's past in the castle.<a class="hint hint2">hint</a></span></p>
+					<form class="singleanswer">
+						<label class="c_p" for="2true"><input type="radio" name="q2" value="true" id="2true"/>True</label>
+						<label class="c_p" for="2false"><input type="radio" name="q2" value="false" id="2false"/>False</label>
+					</form>
+				</div>
+				<div class="content_sub"> 
+					<p><span class="enum">3</span><span class="enumbed">You can't see the city from the castle.<a class="hint hint3">hint</a></span></p>
+					<form class="singleanswer">
+						<label class="c_p" for="3true"><input type="radio" name="q3" value="true" id="3true"/>True</label>
+						<label class="c_p" for="3false"><input type="radio" name="q3" value="false" id="3false"/>False</label>
+					</form>
+				</div>
+
+			</div><!--END #content-->
+						
+			<div id="facs" class="lightyellow">
+				<h1 class="colored greyblack">What to do in Edinburgh...</h1>
+				<img class="img_plain" src="img/edinburgh.jpg"/>
+				<p class="facs_enum colored">1</p>
+				<h2 class="facs_enumbed colored blue">When it's raining: <br>Go to Edinburgh Castle</h2>
+				<p><span class="hilite1">Edinburgh Castle is a very old building, high on a hill in the centre of Edinburgh.</span> You can take a tour of the castle or walk around on your own. <span class="hilite2">You can see many interesting exhibitions, including the Scottish Kings and Queens of the past, and the National War Museum.</span> <span class="hilite3">If it's sunny, you have a fantastic view of the shops and buildings on Edinburgh's famous Royal Mile.</span></p>
+		
+			</div>
+
+			<footer id="activity_controls">
+                <div class="tgglHints actpage1_2Lnk hintsOff"></div>
+                <div class="tgglHints actpage1_3Lnk hintsOff"></div>
+				<div id="micro_controls">
+					<a href="#">Check answers</a>
+					<a href="#">See answers</a>
+					<a class="inactive_button" href="#">Try again</a>
+				</div>
+				<div id="macro_controls">
+					<a class="inactive_button" href="#">Submit</a>
+				</div>
+				<div id="page_controls">
+					<ul>
+						<li class="current_page"><a href="#">1</a></li>
+						<li><a class="c_p" href="activity2_t.html">2</a></li>
+						<li><a class="c_p" href="activity3_t.html">3</a></li>
+					</ul>
+				</div>
+			</footer><!--END #activity_controls-->
+							<div id="oup_footer">
+					<p>Copyright &copy; Oxford University Press, 2012. All Rights Reserved.</p>
+				</div>
+
+					</div><!--END another_pointless_wrapper-->
+			</div><!--END #activity-->
+</section><!--END section -->
+		<div id="switch_user_demo"><a id="tgglHints" class="hintsLnkOn">Hints</a></div>
+    </div><!-- end container -->
+</body>
+</html>

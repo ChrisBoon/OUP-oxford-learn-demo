@@ -1,0 +1,28 @@
+#course_header{
+	background: #181818 url(../img/EF_logo.png) no-repeat 13px 11px;
+	background: url(../img/EF_logo.png) no-repeat 13px 11px, -moz-linear-gradient(top, rgba(50,50,50,1) 0%, rgba(24,24,24,1) 50%, rgba(12,12,12,1) 51%, rgba(17,17,17,1) 100%);
+	background: url(../img/EF_logo.png) no-repeat 13px 11px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,50,50,1)), color-stop(50%,rgba(24,24,24,1)), color-stop(51%,rgba(12,12,12,1)), color-stop(100%,rgba(17,17,17,1)));
+	background: url(../img/EF_logo.png) no-repeat 13px 11px, -webkit-linear-gradient(top, rgba(50,50,50,1) 0%,rgba(24,24,24,1) 50%,rgba(12,12,12,1) 51%,rgba(17,17,17,1) 100%);
+	background: url(../img/EF_logo.png) no-repeat 13px 11px, -o-linear-gradient(top, rgba(50,50,50,1) 0%,rgba(24,24,24,1) 50%,rgba(12,12,12,1) 51%,rgba(17,17,17,1) 100%);
+	background: url(../img/EF_logo.png) no-repeat 13px 11px, -ms-linear-gradient(top, rgba(50,50,50,1) 0%,rgba(24,24,24,1) 50%,rgba(12,12,12,1) 51%,rgba(17,17,17,1) 100%);
+	background: url(../img/EF_logo.png) no-repeat 13px 11px, linear-gradient(top, rgba(50,50,50,1) 0%,rgba(24,24,24,1) 50%,rgba(12,12,12,1) 51%,rgba(17,17,17,1) 100%);
+}
+
+.engfile_elem_banner{background: url(../img/homescreen_graphic_ef_elem_03.png)}
+
+.placholderforwidget_teacher{width:304px;height:500px;background:#000;}
+
+#student_header #user_settings .username>*:first-child{
+	background-image:url(../img/user_img_miriam.png);
+}
+#student_header #notification_bar a {
+	display: block;
+	width:16px;
+	padding-top: 3px;
+	background-image: top right;
+	margin-top: -3px;
+	padding-bottom:0;
+}
+#student_header #notification_bar a:hover, #student_header #notification_bar a:focus, #student_header #notification_bar a:active{
+	background-clip: padding-box;
+}

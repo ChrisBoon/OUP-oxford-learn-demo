@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>	
+<meta charset="utf-8" />	
+    <title>English File | Elementary Online Workbook | powered by OxfordLearn.com | An Oxford University Press product</title>	
+	<!--<link rel="stylesheet" type="text/css" href="css/reset.css" /> CSS reset -->    
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/catdefault.css" /><!-- CSS that would apply to any course -->
+    
+    <link rel="stylesheet" type="text/css" href="css/englishfile.css" /><!-- CSS specific to this course -->
+    
+<link rel="stylesheet" type="text/css" href="css/contents_edit.css" /><!-- CSS specific to this edit content page -->
+
+	<!--[if IE]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--><script src="js/jquery-1.7.1.js"></script>
+    <script type='text/javascript' src="js/jquery.cookie.js"></script>
+	<script type='text/javascript' src="js/jquery.collapsible.js"></script><script src="js/facs-hilite.js"></script>
+	<script>
+		$(document).ready(function() {
+			//Check whether hints are on or off
+			var czempty = localStorage.getItem('tggldHints');
+			if (czempty==null) {
+				localStorage.setItem('tggldHints', "hintsOn");
+			}else{
+				if(czempty == "hintsOn"){
+					$('.tgglHints').removeClass("hintsOff");
+					$('.tgglHints').addClass("hintsOn");
+					$('.tgglHinted').removeClass("hintsOff");
+					$('.tgglHinted').addClass("hintsOn");
+					$('#tgglHints').removeClass("hintsLnkOn");
+					$('#tgglHints').addClass("hintsLnkOff");
+					
+				}
+			}
+		  
+			//'onmouse' function to toggle hints on and off and link text between "On" and "Off"
+			  $('#tgglHints').click(function(){
+				if($('#tgglHints').hasClass("hintsLnkOn")) {
+					$('.tgglHints').removeClass("hintsOff");
+					$('.tgglHints').addClass("hintsOn");
+					$('.tgglHinted').removeClass("hintsOff");
+					$('.tgglHinted').addClass("hintsOn");
+					$('#tgglHints').removeClass("hintsLnkOn");
+					$('#tgglHints').addClass("hintsLnkOff");
+					
+					localStorage.setItem('tggldHints', "hintsOn");
+		
+				} else {
+					$('.tgglHints').removeClass("hintsOn");
+					$('.tgglHints').addClass("hintsOff");
+					$('.tgglHinted').removeClass("hintsOn");
+					$('.tgglHinted').addClass("hintsOff");
+					$('#tgglHints').removeClass("hintsLnkOff");
+					$('#tgglHints').addClass("hintsLnkOn");
+		
+					localStorage.setItem('tggldHints', "hintsOff");
+				}
+		   });
+
+			
+			
+			$(".collapsibleContainer").collapsiblePanel();
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+    	<div class="tgglHints homeLogoLnk hintsOff"></div>
+    	<div class="tgglHints contentLnk hintsOff"></div>
+    	<div class="tgglHints gradesLnk hintsOff"></div>
+    	<div class="tgglHints crseTlsLnk hintsOff"></div>
+    
+    <header id="teacher_header" class="clearfix">
+			<a href="#"><div id="ol_logo">
+			</div></a>
+			<nav id="breadcrumb">
+				<ul>
+					<li>Home</li>
+					<li><a>English File | Elementary Online Workbook</a></li>
+				</ul>
+			</nav>
+			<nav id="minibar" class="clearfix">
+				<ul id="notification_bar">
+					<li>0</li>
+					<li class="alerts">9</li>
+					<li class="messages">42</li>
+				</ul>
+				<ul id="user_settings">
+					<li class="username"><a href="#">Mr Williamson</a>
+					<ul>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Notifications</a></li>
+						<li class="signout_li"><a href="#">Log out</a></li>
+					</ul></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="course">
+			<header id="course_header" class="cleafix">
+				<div class="homelink"><a class="c_p" href="ef_el_t_home.html"></a></div>
+                <nav class="cleafix">
+					<ul id="coursebar" class="cleafix"><!-- Secondary Teacher content -->
+						<li><a class="c_p" href="content_t.html">Content</a></li>
+						<li><a class="c_p" href="grades_t.html">Grades</a></li>
+						<li><a href="#" class="trigger">Class Tools</a>
+							<ul>
+								<li><a href="#">Classlist</a></li>
+								<li><a class="tgglHinted hintsOff c_p" href="groups_t.html">Groups</a></li>
+								<li><a href="#">Calendar</a></li>
+                                <li><a href="#">Checklist</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Progress Check</a>
+							<ul>
+								<li><a href="#">User Progress</a></li>
+								<li><a href="#">Competencies</a></li>
+								<li><a href="#">Self-Assessment</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Resources</a>
+							<ul>
+								<li><a href="#">Locker</a></li>
+								<li><a href="#">Dictionary</a></li>
+								<li class="wideboy"><a href="#">Grammar Bank</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Communicate</a>
+							<ul>
+								<li><a href="#">Messages</a></li>
+								<li><a href="#">Discussions</a></li>
+								<li><a href="#">Surveys</a></li>
+								<li><a href="#">Chat</a></li>
+							</ul>
+						</li>
+					</ul><!-- END Secondary Teacher content -->		
+				</nav>				
+			</header>
+
+        <div id="shell">
+			
+
+			<div id="content">
+            	<div id="editcontent">
+                	<h1>Edit Topic &ndash; Exercise 4a</h1>
+           			<h2>Restrictions</h2>
+                    
+                    <div id="restrictions">
+                    	<form>
+                    	<fieldset class="clearfix">
+                        	<h3>Availability</h3>
+                        	<h4>Hidden</h4>
+                        	<label for="hide" class="hidden"><input class="c_p" type="checkbox" name="hide"> Hide this topic</label>
+                        	<div id="availability" class="clearfix">
+								<h4>Date availability</h4>
+                        		<div class="startdate clearfix"><label for="startdatehide"><input class="c_p" type="checkbox" name="startdatehide"> Has Start Date<br />
+                        			<div class="dates"><input type="text" name="startdate" class="calendar" placeholder="3/10/2012">
+                        				<select class="c_p" name="starthour">
+                            				<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+											<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+											<option>11</option><option>12</option>
+                        				</select>
+                        				<select class="c_p" name="startmin">
+                            <option>00</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option>
+                        				</select>
+                        				<select class="c_p" name="startpm">
+                            				<option>AM</option>
+                            				<option>PM</option>
+                        				</select>
+										<input type="button" value="Now">
+									</div>
+                       			</label></div>
+                        		<div class="enddate clearfix"><label for="enddatehide"><input class="c_p" type="checkbox" name="enddatehide"> Has End Date<br />
+                         			<div class="dates"><input type="text" name="enddate" class="calendar" placeholder="10/10/2012">
+                        				<select class="c_p" name="endhour">
+            								<option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+											<option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+											<option>11</option><option>12</option>
+                        				</select>
+                        				<select class="c_p" name="endmin">
+							<option>00</option><option>01</option><option>02</option><option>03</option><option>04</option><option>05</option><option>06</option><option>07</option><option>08</option><option>09</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option><option>31</option><option>32</option><option>33</option><option>34</option><option>35</option><option>36</option><option>37</option><option>38</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option><option>46</option><option>47</option><option>48</option><option>49</option><option>50</option><option>51</option><option>52</option><option>53</option><option>54</option><option>55</option><option>56</option><option>57</option><option>58</option><option>59</option>
+                        				</select>
+                        				<select class="c_p" name="endpm">
+                            				<option>AM</option>
+                            				<option>PM</option>
+                        				</select>
+										<input type="button" value="Now">
+                        			</div>
+                        		</label></div>
+								<div class="displayincalendar clearfix"><label for="display"><input class="c_p" type="checkbox" name="display">Display in Calendar</label></div>
+                        	</div>
+                    	</fieldset>
+                    
+                    	<fieldset>
+                        	<div id="conditions">
+                            	<h3>Release Conditions</h3>
+                            	<a class="shell_button">Attach Existing</a>
+                            	<a class="shell_button">Create and Attach</a>
+                            	<a class="shell_button_trash">Remove All Conditions</a>
+                       			<p>There are no conditions attached to this item.</p>
+                        	</div><!-- /end conditions -->
+                    		<div class="save">
+								<a class="shell_button">Save</a>
+								<a class="shell_button">Cancel</a>
+                    		</div>
+                    	</fieldset>
+                		</form>
+            		</div><!-- /end restrictions -->
+				</div><!-- /end editcontent-->
+            	<!-- left border -->
+				<div id="oup_footer">
+					<p>Copyright &copy; Oxford University Press, 2012. All Rights Reserved.</p>
+				</div>
+			</div><!--END #content -->
+		</div><!--END #activity-->
+</section><!--END section -->
+    		<div id="switch_user_demo"><a id="tgglHints" class="hintsLnkOn">Hints</a></div>
+    </div><!-- end container -->
+</body>
+</html>

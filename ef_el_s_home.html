@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6 ie" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9 ie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>	
+<meta charset="utf-8" />	
+    <title>English File | Elementary Online Workbook | powered by OxfordLearn.com | An Oxford University Press product</title>	
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<!-- CSS that would apply to any course -->
+	<link rel="stylesheet" type="text/css" href="css/englishfile.css" /><!-- CSS specific to this course -->
+	<!--[if IE]> <link rel="stylesheet" type="text/css" href="css/ie.css" /> <![endif]-->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<script src="js/jquery-1.7.1.js"></script>
+	<script type='text/javascript' src="js/jquery.cookie.js"></script>
+	<script type='text/javascript' src="js/jquery.collapsible.js"></script>
+
+
+	<script type='text/javascript'>
+		$(document).ready(function() {
+			//Check whether hints are on or off
+			var czempty = localStorage.getItem('tggldHints');
+			if (czempty==null) {
+				localStorage.setItem('tggldHints', "hintsOn");
+			}else{
+				if(czempty == "hintsOn"){
+					$('.tgglHints').removeClass("hintsOff");
+					$('.tgglHints').addClass("hintsOn");
+					$('.tgglHinted').removeClass("hintsOff");
+					$('.tgglHinted').addClass("hintsOn");
+					$('#tgglHints').removeClass("hintsLnkOn");
+					$('#tgglHints').addClass("hintsLnkOff");
+					
+				}
+			}
+		  
+			//'onmouse' function to toggle hints on and off and link text between "On" and "Off"
+			  $('#tgglHints').click(function(){
+				if($('#tgglHints').hasClass("hintsLnkOn")) {
+					$('.tgglHints').removeClass("hintsOff");
+					$('.tgglHints').addClass("hintsOn");
+					$('.tgglHinted').removeClass("hintsOff");
+					$('.tgglHinted').addClass("hintsOn");
+					$('#tgglHints').removeClass("hintsLnkOn");
+					$('#tgglHints').addClass("hintsLnkOff");
+					
+					localStorage.setItem('tggldHints', "hintsOn");
+		
+				} else {
+					$('.tgglHints').removeClass("hintsOn");
+					$('.tgglHints').addClass("hintsOff");
+					$('.tgglHinted').removeClass("hintsOn");
+					$('.tgglHinted').addClass("hintsOff");
+					$('#tgglHints').removeClass("hintsLnkOff");
+					$('#tgglHints').addClass("hintsLnkOn");
+		
+					localStorage.setItem('tggldHints', "hintsOff");
+				}
+		   });
+					
+		
+			$.collapsible(".module .widget_header");
+		});
+    </script>
+
+
+</head>
+
+<body id="home" class="teacher c_sol">
+	<div id="dontuseIE">
+		<p class="ieMessage">This demo site doesn't support Internet Explorer. For optimal performance please view in Google Chrome or Mozilla Firefox.</p>
+        <p><a href="http://www.google.co.uk/aclk?sa=l&ai=C44LRXHSVT5vKOpKf0AW2y5zlBvDhlZ0CsNT_zyTj-PirXggAEAEgtlRQxoSJ0QZgu460g9AKoAG0soP2A8gBAaoEE0_QuS_B01zv0ylSgd-pviK4AJiABZBO&sig=AOD64_1c5ZUJHCZpmIJd7ORtgqrU0N1qGQ&ved=0CAoQ0Qw&adurl=http://clickserve.dartsearch.net/link/click%3Flid%3D43700003148375791%26ds_s_kwgid%3D58700000019346062%26ds_e_adid%3D9740931912%26ds_e_matchtype%3Dsearch%26ds_url_v%3D2&rct=j&q=download%20google%20chrome&cad=rja">Download Google Chrome</a></p>
+        <p><a href="http://www.google.co.uk/url?sa=t&rct=j&q=download%20mozilla%20firefox&source=web&cd=1&ved=0CDcQFjAA&url=http%3A%2F%2Fwww.mozilla.org%2Fen-US%2Ffirefox%2Fnew%2F&ei=vnSVT5kIg7nRBYOGhPwB&usg=AFQjCNHXR7GrDNHIc3plcSvQSx_ByCacYQ&cad=rja">Download Mozilla Firefox</a></p>
+	</div>
+	<div id="apploader">
+		<p>Updating files for offline use. Please wait until fully downloaded.</p>
+	</div>
+
+	<div id="container">
+    	<div class="tgglHints contentLnk hintsOff"></div>
+    	<div class="tgglHints gradesLnk hintsOff"></div>
+    	<div class="tgglHints news_S_Lnk hintsOff"></div>
+    	<div class="tgglHints prsnlTlsLnk hintsOff"></div>
+    	<div class="tgglHints roles_bkmrk_Lnk hintsOff"></div>
+		<header id="student_header" class="clearfix">
+			<a href="#"><div id="ol_logo">
+			</div></a>
+			<nav id="breadcrumb">
+				<ul>
+					<li>Home</li>
+					<li>English File | Elementary Online Workbook</li>
+				</ul>
+			</nav>
+			<nav id="minibar" class="clearfix">
+				<ul id="notification_bar">
+					<li class="grades"><a class="grades_a" href="#"> 2</a>
+						<ul>
+							<li><p><strong>English File Elementary - Grades:</strong> Your grade for "1A Exercise 2b" has been released.</p></li>
+							<li><p><strong>English File Elementary - Quizzes:</strong> End date soon. "FILE 1 Vocabulary Quiz" ends on Friday, Mar 30, 2012 3:00 PM</p></li>
+						</ul>
+					</li>
+					<li class="alerts">1</li>
+					<li class="messages">5</li>
+				</ul>
+				<ul id="user_settings">
+					<li class="username"><a href="#">Miriam Cerda</a>
+					<ul>
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Notifications</a></li>
+						<li class="signout_li"><a href="#">Log out</a></li>
+					</ul></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="course">
+			<header id="course_header" class="cleafix">
+				<nav class="cleafix">
+					<ul id="coursebar" class="cleafix"><!-- Secondary Student content -->
+						<li><a class="c_p" href="content_s.html">Content</a></li>
+						<li><a class="c_p" href="grades_s.html">Grades</a></li>
+						<li><a href="#" class="trigger">Class Tools</a>
+							<ul>
+								<li><a href="#">Groups</a></li>
+								<li><a href="#">Calendar</a></li>
+                                <li><a href="#">Checklist</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Progress Check</a>
+							<ul>
+								<li><a href="#">User Progress</a></li>
+								<li><a href="#">Competencies</a></li>
+								<li><a href="#">Self-Assessment</a></li>
+								
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Resources</a>
+							<ul>
+								<li><a href="#">Locker</a></li>
+								<li><a href="#">Dictionary</a></li>
+								<li class="wideboy"><a href="#">Grammar Bank</a></li>
+							</ul>
+						</li>
+						<li><a href="#" class="trigger">Communicate</a>
+							<ul>
+								<li><a href="#">Messages</a></li>
+								<li><a class="tgglHinted hintsOff c_p" href="discussion.html">Discussions</a></li>
+								<li><a href="#">Surveys</a></li>
+								<li><a href="#">Chat</a></li>
+							</ul>
+						</li>
+					</ul><!-- END Secondary Student content -->		
+				</nav>				
+			</header>
+			<a><div id="course_banner" class="engfile_elem_banner">
+				<!--<div id="welcome_box">
+					<h1>Welcome to <span>English File</span> Elementary Online Workbook</h1>
+					<a class="button1">Go to content</a>
+					<div id="video_box">
+						<p>New to Oxford Learn? Watch tis video demonstration for tips and advice.</p>
+						<a class="button1">Watch video</a>
+					</div>
+				</div> -->	
+			</div></a><!-- END course banner -->
+			<div id="widget_area" class="clearfix student_widgets">
+				<div class="widget left_widget module">
+					<div class="widget_header collapsed c_p">
+						<h1>News</h1>
+					</div>
+					<div class="widget_content">
+						<h2>Welcome students!</h2>
+						<p>I'm very pleased that you have joined my English class. I'm sure you will enjoy using <em>English File</em>.</p>
+						<p>Come here to practise what you learn in class and to check your grades.</p>
+						<p>Your first task is to visit the <a>Discussions</a> area. Post an introduction and say why you're learning English, so that we can all get to know each other. I've started the discussion with a few words about me...</p>
+	    			</div>
+				</div>
+				<div class="widget right_widget module">
+					<div class="widget_header collapsed">
+						<h1>Bookmarks</h1>
+					</div>
+					<div class="widget_content">
+	    				<h2>My Bookmarks</h2>
+	    				<ul>
+	    					<li><a href="#">1B LISTENING Exercise 5a</a></li>
+							<li><a href="#">3B VOCABULARY Exercise 2a</a></li>
+							<li><a href="#">5C READING Exercise 4a</a></li>
+						</ul>
+	    			</div>
+				</div>
+			</div>
+		</section>
+		<div id="switch_user_demo"><a id="tgglHints" class="hintsLnkOn">Hints</a> | <a class="c_p" href="ef_el_t_home.html">Switch to teacher demo</a></div>
+	</div>
+</body>
+</html>
